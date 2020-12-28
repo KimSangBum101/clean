@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>aos</title>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/aos.css">
+<style>
+    body{height: 2000px;}
+    .aos-all{
+        width: 1000px;
+        margin: 1000px auto;
+    }
+    .aos-item{
+        float: left;
+        width: 20%;
+        height: 300px;
+        padding: 20px;
+    }
+    .aos-item__inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #1da4e2;
+        line-height: 260px;
+        text-align: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div id="transcroller-body" class="aos-all">
+    <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+        <div class="aos-item__inner"><h3>fade-up</h3></div>
+    </div>
+    <div class="aos-item" data-aos="flip-down" data-aos-duration="2000">
+        <div class="aos-item__inner"><h3>flip-down</h3></div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out" data-aos-duration="1000">
+        <div class="aos-item__inner"><h3>zoom-out</h3></div>
+    </div>
+</div>
+<script src="../js/aos.js"></script>
+<script>
+AOS.init({
+    easing : 'ease-in-out-sine'
+});
+</script>
+</body>
+</html>

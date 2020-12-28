@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub_hat.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+
+    <style>
+        /*옮기면 안됌*/
+
+
+        .jg {
+            font-family: 'Jeju Gothic';
+        }
+
+        .ns {
+            font-family: 'Noto Sans KR';
+        }
+
+    </style>
+    <title>Document</title>
+    <script>
+        $(function(ready) {
+            $(".button ul li").eq(0).click(function(e) {
+                e.preventDefault();
+                $(".first_content").stop().fadeIn(2000);
+                $(".second_content").stop().fadeOut(1000);
+            });
+            $(".button ul li").eq(1).click(function(e) {
+                e.preventDefault();
+                $(".first_content").stop().fadeOut(1000);
+                $(".second_content").stop().fadeIn(2000);
+            });
+        })
+
+    </script>
+    <script>
+           $(document).ready(function() {
+            var num = 0;
+            $("div.btn").click(function() {
+                if (num == 0) {
+                    $(".nav").animate({
+                        left: 0
+                    }, 1000);
+                    $(".btn").addClass("change");
+                    $(".main_nav").css("background","#fff");
+
+                    num = 1;
+                } else {
+                    $(".nav").animate({
+                        left: -200
+                    }, 1000);
+                    $(".btn").removeClass("change");
+                    $(".sub_nav").removeClass("on");
+                    $(".main_nav").css("background","none");
+                    num = 0;
+                }
+            });
+            $(".main_nav>li:nth-child(1)").click(function() {
+                $(".b").removeClass("on")
+                $(".a").toggleClass("on")
+
+            });
+            $(".main_nav>li:nth-child(2)").click(function() {
+                $(".a").removeClass("on")
+                $(".b").toggleClass("on")
+
+            })
+        });
+       
+    </script>
+
+</head>
+
+<body>
+   <div id="header">
+        <div class="nav jg">
+            <div class="btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="main_nav">
+                <li><a href="#">의류 서비스<i class="fas fa-tshirt"></i></a>
+                    
+                    <ul class="sub_nav a">
+                        <li><a href="sub1.html">일반의류</a></li>
+                        <li><a href="sub9-Yshirt.html">와이셔츠</a></li>
+                        <li><a href="sub4-skin.html">가죽모피</a></li>
+                        <li><a href="sub6-outdoor.html">아웃도어</a></li>
+                        <li><a href="sub7-school.html">교복</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                  기타 서비스
+                  <i class="fas fa-shopping-bag"></i>
+                   </a>
+                    <ul class="sub_nav b">
+                        <li><a href="sub3-blanket.html">이불</a></li>
+                        <li><a href="sub2-shoes-2.html">운동화</a></li>
+                        <li><a href="sub5-named.html">명품가방</a></li>
+                        <li><a href="sub8-hat.html">모자/인형/가방</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.cleantopia.com/kr/store/storeList.do">매장찾기<i class="fas fa-map-marked-alt"></i></a></li>
+                <li><a href="sub10_membership2.html">멤버십<i class="fas fa-address-card"></i></a></li>
+            </ul>
+        </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+        <div class="bar"></div>
+    </div>
+    <div id="section">
+
+    </div>
+    <div id="content">
+        <div class="title jg">
+            <h1>모자/인형/가방</h1>
+            <p class="ns">크린토피아 모자/인형/가방 세탁서비스</p>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main_title title">
+            <h1>변형없이 찌든 때만 쏙쏙~<br><span style="color: #0581d8;">모자/인형/가방 세탁서비스</span></h1>
+        </div>
+        <div class="button">
+            <ul>
+                <li><a href="#">모자/가방</a></li>
+                <li><a href="#">인형</a></li>
+            </ul>
+        </div>
+        <div class="first_content">
+            <div class="process content">
+                <div class="text">
+                    <h2>모자 주름제거<br>서비스 안내</h2>
+                </div>
+                <div class="circle">
+                    <div class="service">
+                        <img src="sub_img/hat_img1.png" alt="">
+                        <h3>스타일의 완성! 모자 주름 제거 서비스</h3>
+                        <p>스냅백, 심지가 있는 야구모자 등 집에서 모자세탁 시 생길 수 있는 주름을 말끔히 제거해 드립니다.</p>
+                        <p>*주름제거서비스는 ‘모자(자수)’ 품목 접수 시 적용됩니다.</p>
+                    </div>
+                    <img src="sub_img/hat_img2.png" alt="">
+                    <img src="sub_img/hat_img3.png" alt="">
+                </div>
+            </div>
+            <div class="price content">
+                <div class="text">
+                    <h2>요금안내</h2>
+                </div>
+                <div class="price_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 50%">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <td>품목</td>
+                            <td>요금</td>
+                        </tr>
+                        <tr>
+                            <td>학생용/등산용 가방</td>
+                            <td>6,000원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>모자(캡)</td>
+                            <td>2,600원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>모자(자수, 캡) - 주름 제거 서비스가 포함된 가격</td>
+                            <td>3,700원 ~</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="second_content">
+            <div class="process content">
+                <div class="text">
+                    <h2>인형 세탁<br>서비스 안내</h2>
+                </div>
+                <div class="circle">
+                    <div class="service">
+                        <img src="sub_img/hat_secondimg1.png" alt="">
+                        <h3>새 인형처럼 털이 복실복실 살아나는 인형세탁서비스</h3>
+                        <p>우리 아이가 친구처럼 항상 안고 빠는 인형~</p>
+                        <p>세탁과 건조가 만만치 않으셨죠? 게다가 세탁 후 망가질까 더 걱정이지요.</p>
+                        <p>인형세탁서비스는 인형의 오염뿐 아니라, 알러지를 유발하는 먼지와 진드기까지 말끔하게 제거해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="warning content">
+                <div class="text">
+                    <h2>주의사항</h2>
+                </div>
+                <div class="warning_point">
+                    <ul>
+                        <li>인형은 집에서 세탁할 경우, 털 사이에 먼지가 뭉치거나 며칠이 지나도 건조가 되지 않아 냄새가 나고, 건조 후에는 털이 뭉치고 원형이 손상되는 문제가 발생하는 경우가 많습니다.</li>
+                        <li>인형에 따라, 세탁이나 건조 시 털이 많이 빠지는 경우가 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price content">
+                <div class="text">
+                    <h2>요금안내</h2>
+                </div>
+                <div class="price_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 50%">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <td>품목</td>
+                            <td>요금</td>
+                        </tr>
+                        <tr>
+                            <td>인형(소)</td>
+                            <td>3,300원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>인형(중)</td>
+                            <td>5,200원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>인형(대)</td>
+                            <td>9,500원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>인형(특)</td>
+                            <td>20,000원 ~</td>
+                        </tr>
+                        <tr>
+                            <td>인형(특대)</td>
+                            <td>38,000원 ~</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrap">
+                <address>본사 경기도 성남시 중원구 순환로 222 (상대원동 64번지) 크린토피아 </address>
+                <p><span>대표전화(창업문의) <strong>1577-4560</strong></span><span>고객상담 <strong>1899-4568</strong></span></p>
+                <p><span>대표이사 이범택</span><span>사업자등록번호 130-81-55163</span><span>FAX 031-733-1995</span></p>
+                <p class="copy">COPYRIGHT©CLEANTOPIA ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

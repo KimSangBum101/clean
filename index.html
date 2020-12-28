@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!--    <script src="js/jquery.fullPage.min.js"></script>-->
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+
+    <script>
+        $(document).ready(function() {
+            var num = 0;
+            $("div.btn").click(function() {
+                if (num == 0) {
+                    $(".nav").animate({
+                        left: 0
+                    }, 1000);
+                    $(".btn").addClass("change");
+                    $(".main_nav").css("background","#fff");
+
+                    num = 1;
+                } else {
+                    $(".nav").animate({
+                        left: -200
+                    }, 1000);
+                    $(".btn").removeClass("change");
+                    $(".sub_nav").removeClass("on");
+                    $(".main_nav").css("background","none");
+                    num = 0;
+                }
+            });
+            $(".main_nav>li:nth-child(1)").click(function() {
+                $(".b").removeClass("on")
+                $(".a").toggleClass("on")
+
+            });
+            $(".main_nav>li:nth-child(2)").click(function() {
+                $(".a").removeClass("on")
+                $(".b").toggleClass("on")
+
+            })
+        });
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+        $(function() {
+            $(".key1").on('mouseover', function() {
+                $(".shoes").stop().slideUp(500);
+                $(".quilt").stop().slideUp(500);
+            })
+        })
+        $(function() {
+            $(".key2").on('mouseover', function() {
+                $(".shoes").stop().slideDown(500);
+                $(".quilt").stop().slideUp(500);
+            })
+        })
+        $(function() {
+            $(".key3").on('mouseover', function() {
+                $(".quilt").stop().slideDown(500);
+            })
+        })
+
+    </script>
+    <style>
+        /*옮기면 안됌*/
+
+
+        .jg {
+            font-family: 'Jeju Gothic';
+        }
+
+        .ns {
+            font-family: 'Noto Sans KR';
+        }
+
+        .footer-wrap {
+            height: 300px;
+        }
+
+    </style>
+    <title>크린토피아</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="nav jg">
+            <div class="btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="main_nav">
+                <li><a href="#"><i class="fas fa-tshirt"></i>의류 서비스</a>
+                    
+                    <ul class="sub_nav a">
+                        <li><a href="sub1.html">일반의류</a></li>
+                        <li><a href="sub9-Yshirt.html">와이셔츠</a></li>
+                        <li><a href="sub4-skin.html">가죽모피</a></li>
+                        <li><a href="sub6-outdoor.html">아웃도어</a></li>
+                        <li><a href="sub7-school.html">교복</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                 <i class="fas fa-shopping-bag"></i>
+                  기타 서비스
+                   </a>
+                    <ul class="sub_nav b">
+                        <li><a href="sub3-blanket.html">이불</a></li>
+                        <li><a href="sub2-shoes-2.html">운동화</a></li>
+                        <li><a href="sub5-named.html">명품가방</a></li>
+                        <li><a href="sub8-hat.html">모자/인형/가방</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.cleantopia.com/kr/store/storeList.do"><i class="fas fa-map-marked-alt"></i>매장찾기</a></li>
+                <li><a href="sub10_membership2.html"><i class="fas fa-address-card"></i>멤버십</a></li>
+            </ul>
+        </div>
+        <div id="header">
+
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="bar"></div>
+        </div>
+
+        <div id="fullpage">
+            <div class="section page1" data-anchor="1">
+                <div class="main_section">
+                    <div class="left_section">
+                        <img src="images/coinroom.png" alt="leftsection">
+                    </div>
+                    <div class="right_section">
+                        <img src="images/rightsection.png" alt="rightsection">
+                    </div>
+                </div>
+            </div>
+            <div class="section page1" data-anchor="2">
+                <div class="sc_section">
+                    <div class="nomal md">
+                        <h1 class="ns" style="font-family: 'MaruBuri-Regular';">일반 의류</h1>
+                        <p>" 처음 새 옷을 입었을 때의 고객님의 설레임을 생각합니다. "
+                            <br><span style="font-size: 16px;">언제 입어도 늘 새 옷을 입는 듯한 상쾌한 기분을 드리기 위해
+                                <br>오늘도 옷을 연구합니다. 세탁을 연구합니다.</span>
+                        </p>
+                    </div>
+                    <div class="shoes md">
+                        <h1 class="ns" style="font-family: 'MaruBuri-Regular';">운동화</h1>
+                        <p>“ 매일매일 신다 보니 오염과 냄새,
+                            <br>세균 서식까지 걱정되는 운동화와 구두 ”<br>
+                            <span style="font-size: 16px;">집에서 지우기 어려운 오염은 물론 악취까지 말끔하게 제거해 드립니다.</span>
+                        </p>
+                    </div>
+                    <div class="quilt md">
+                        <h1 class="ns" style="font-family: 'MaruBuri-Regular';">이불</h1>
+                        <p>“ 부피 큰 이불, 집에서는 세탁도 건조도 어려우셨죠? ”<br>
+                            <span style="font-size: 16px;">세탁 후에도 남아있는 오염과 먼지, 보이지 않는 진드기 까지…
+                                <br>이제 세탁기보다 크린토피아 이불 세탁서비스로 더 깨끗하게 더 뽀송하게 이불케어하세요.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="keyimage">
+                    <ul>
+                        <li><a href="#" class="key1"><img src="images/keyimage1.png" alt="keyimage1"></a></li>
+                        <li><a href="#" class="key2"><img src="images/keyimage2.png" alt="keyimage2"></a></li>
+                        <li><a href="#" class="key3"><img src="images/keyimage3.png" alt="keyimage3"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section page1 page3" data-anchor="3">
+                <div class="tr_section ns">
+                    <div class="view1 tr-box">
+                        <a href="sub4-skin.html">
+                            <img src="images/clothes.png" alt="">
+                            <h3>모피/가죽</h3>
+                            <p>
+                                전문가의 손길이 필요한<br>
+                                <span style="color: #0581d8">가죽,모피 세탁서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                    <div class="view2 tr-box">
+                        <a href="sub5-named.html">
+                            <img src="images/tr_image2.png" alt="">
+                            <h3>명품가방</h3>
+                            <p>
+                                얼룩진 가죽가방,<br>오염된 명품백엔<br>
+                                <span style="color: #0581d8">가죽가방 세탁/수선 <br>서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                    <div class="view3 tr-box">
+                        <a href="sub6-outdoor.html">
+                            <img src="images/tr_image3.png" alt="">
+                            <h3 style="">아웃도어</h3>
+                            <p>
+                                기능성 아웃도어!<br>
+                                <span style="color: #0581d8">아웃도어 세탁서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                    <div class="view4 tr-box">
+                        <a href="sub7-school.html">
+                            <img src="images/tr_image4.png" alt="">
+                            <h3>교복</h3>
+                            <p>
+                                매일매일 입는 교복이니까<br>
+                                더 깨끗하게!더 빠르게!<br>
+                                <span style="color: #0581d8;">교복 세탁서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                    <div class="view5 tr-box">
+                        <a href="sub8-hat.html">
+                            <img src="images/tr_image5.png" alt="">
+                            <h3>모자/인형/가방</h3>
+                            <p>
+                                변형없이 찌든 때만 쏙쏙~<br>
+                                <span style="color: #0581d8">모자/인형/가방 <br>세탁서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                    <div class="view6 tr-box">
+                        <a href="sub9-Yshirt.html">
+                            <img src="images/tr_image6.png" alt="">
+                            <h3>와이셔츠</h3>
+                            <p>
+                                편하게!깔끔하게!<br>
+                                <span style="color: #0581d8">와이셔츠 세탁 서비스</span>
+                            </p>
+                            <p style="color: #0581d8">view</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section page1" data-anchor="4">
+                <div class="fth_section jg">
+                    <h1>
+                        크린토피아 <span style="color: #159d3e">최대30%</span><br>
+                        할인 이벤트
+                    </h1>
+                </div>
+                <div class="event1 ev jg">
+                    <h3>매주 수요일</h3>
+                    <p>(마트매장의 경우 목요일 적용)</p>
+                    <h2><span style="color: #0581d8">7</span>%</h2>
+                </div>
+                <div class="event2 ev jg">
+                    <h3>매주 수,토요일</h3>
+                    <p>(마트매장의 경우 목,토요일 적용)</p>
+                    <h2><span style="color: #159d3e">30</span>%</h2>
+                </div>
+                <div class="event3 ev jg">
+                    <h3>생일</h3>
+                    <h2><span style="color: #045a7d">20</span>%</h2>
+                </div>
+                <div class="event4 ev">
+                    <p><img src="images/icon.png" alt=""> 유의사항</p>
+                    <ul>
+                        <li>셔츠(일반), 셔츠(드라이), 넥타이, 스카프, 머플러, 부가서비스 등<sapn style="color: #2471c8"> 일부 품목은 할인이 제외</sapn>됩니다.</li>
+                        <li>
+                            타 할인쿠폰과 함께 사용하실 수 없습니다. <span style="color: #2471c8">(중복할인 불가)</span>
+                        </li>
+                        <li>
+                            이용하시는 매장에서 생일을 등록할 수 있으며. 등록한 생일 기준 앞뒤 15일<span style="color: #2471c8">(총 31일)</span> 내에
+                            <span style="color: #2471c8">연 1회 20% 할인</span>을 받을 수 있습니다.
+                        </li>
+                        <li>
+                            생일 등록 당일에는 할인 적용이 불가합니다.
+                        </li>
+                        <li>
+                            크린토피아의 할인 제도는 세탁편의점에서 선불 접수 시 적용이 가능하며, 무인 세탁함, 셀프 빨래방 등에서는 할인이 불가합니다.
+                        </li>
+                        <li>
+                            세탁물 접수 시, 해당 가맹점에 할인 가능 여부에 대해 문의하신 후 이용 바랍니다.
+                        </li>
+                        <li>
+                            의류보관서비스 이용 시, 보관요금은 유아적용을 포함한 모든 할인이 적용되지 않습니다.
+                        </li>
+                    </ul>
+                </div>
+                <div class="stamp">
+                    <h2>
+                        크린토피아<br>
+                        <span style="color: #159d3e">스탬프</span>쿠폰
+                    </h2>
+                    <p><strong>
+                            <img src="images/stamp1.png" alt="">
+                            스템프 적립대상<br>
+                            금액5,000원당<br>
+                            <span style="color: #96bde8">스탬프 1개가 적립됩니다.</span></strong>
+                    </p>
+                    <p><strong>
+                            <img src="images/stamp2.png" alt="">
+                            <span style="color: #96bde8">12개 완료 시,</span><br>
+                            3,000원 쿠폰 자동 등록</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="section fp-auto-height" id="section2">
+                <div class="footer">
+                    <div class="footer-wrap">
+                        <address>본사 경기도 성남시 중원구 순환로 222 (상대원동 64번지) 크린토피아 </address>
+                        <p><span>대표전화(창업문의) <strong>1577-4560</strong></span><span>고객상담 <strong>1899-4568</strong></span></p>
+                        <p><span>대표이사 이범택</span><span>사업자등록번호 130-81-55163</span><span>FAX 031-733-1995</span></p>
+                        <p class="copy">COPYRIGHT©CLEANTOPIA ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

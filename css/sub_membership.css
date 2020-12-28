@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    width: 100%;
+    height: 141px;
+    padding-top: 28px;
+    position: relative;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e8;
+    z-index: 999;
+    background: #ffffff;
+}
+
+p, li{font-family: 'IropkeBatangM' }
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #666;
+    clear: both;
+    table-layout: fixed;
+    background: #fff;
+    border-top: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    line-height: 1.5em;
+}
+td{
+    color: #666;
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px 10px 11px;
+    font-weight: normal;
+    border-bottom: #ccc 1px solid;
+}
+td:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+tr:nth-child(1){
+    background: #eee;
+}
+#header .nav {
+    float: left;
+    margin-left: 50px;
+}
+
+#header .nav img {
+    position: absolute;
+
+}
+
+#header .nav a {
+    font-size: 16px;
+    color: #9a9ca0;
+    position: absolute;
+    left: 115px;
+    top: 45px;
+}
+
+#header .logo {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header .logo a {
+    width: 210px;
+}
+
+#header .bar {
+    width: 100%;
+    height: 25px;
+    background: #0581d8;
+    margin: 0 auto;
+
+}
+
+
+#section {
+    background: url(../sub_img/membership_section.png) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 378px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#content .title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#content .title h1 {
+    font-size: 48px;
+    font-family: 'paybooc-Bold';
+}
+
+#content .title p {
+    margin-top: 33px;
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    background: #f6f7fb;
+    margin-top: 40px;
+    padding-top: 60px;
+}
+
+#main .main_title {
+    text-align: center;
+}
+
+#main .main_title h1 {
+   font-family: NanumGothic;
+    font-size: 30px;
+    font-weight: 300;
+}
+#main .content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+#main .text{
+    text-align: center;
+    margin-top: 0;
+}
+#main .text p{
+   font-size: 30px;
+    font-family: 'NanumGothic';
+    color: #3f92dc;
+    line-height: 80px;
+}
+#main .membership{
+    background: #ffffff;
+    height: 170px;
+    overflow: hidden;
+    
+}
+/*
+#main .membership:nth-child(2){
+    margin-right: -300px;
+    transition: all 0.5s;
+}
+*/
+/*
+#main .membership.on{
+    opacity: 1;
+    margin-left: 0;
+    transition: all 1s;
+}
+
+#main .membership:nth-child(2).on{
+    opacity: 1;
+    margin-right: 0;
+}
+*/
+#main .membership .ms_l{
+    width: 50%;height: 110px;
+    border-right: 1px solid #eee;
+    margin: 30px 0;    
+    padding-left: 68px;
+    float: left;
+    position: relative;
+}
+#main .membership .ms_l .vip{
+    width: 100px;height: 100px;
+    text-align: center;
+    padding-top: 37px;
+    background: url(../sub_img/membership_circle1.png) no-repeat ;
+}
+
+#main .membership .circle{
+   float: left;  
+    margin-right: 27px;
+    
+}
+#main .membership .circle p{
+    font-size: 30px;
+    font-family: 'Jeju Gothic';
+    color: #fff;
+}
+#main .membership .price{
+    margin-top: 20px;
+}
+#main .membership .price p{
+    font-family: 'Jeju Gothic';
+    font-size: 16px;  
+}
+#main .membership .price h3{
+    margin-top: 25px;
+    font-size: 18px;
+    
+}
+#main .membership .ms_r{
+    width: 50%;float: left;
+}
+
+#main .membership .benefit_txt{
+    height: 85px;padding-top: 10px;
+ 
+}
+#main .membership .benefit_txt h3{
+    font-size: 16px;
+    font-family: NanumGothic;
+    line-height: 32px;
+    font-weight: 500;
+    margin-left: 92px;
+}
+#main .membership .benefit1:after{
+    content: '';display: block;
+    border-bottom: 1px solid #eee;
+    width: 470px;margin: 0 auto;
+    margin-top: 10px;
+}
+#main .membership .ms_l .gold{
+    width: 100px;height: 100px;
+    text-align: center;
+    padding-top: 37px;
+    background: url(../sub_img/membership_circle2.png) no-repeat ;
+}
+#main .event{
+    width: 100%;
+    overflow: hidden;
+}
+#main .event .text{
+    margin: 100px 0;
+}
+#main .event .ev li{
+    float: left;
+    width: 30%;
+    text-align: center;
+    height: 630px;
+    margin: 0 1.5%;
+    margin-bottom: 30px;
+}
+#main .event .ev li img{
+    width: 100%;
+    height: 490px;
+}
+#main .event .ev li .ev_txt{
+    background: #fff;
+    height: 140px;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+} 
+#main .event .ev li .ev_txt h3{
+    font-size: 16px;
+    font-family: 'NanumGothic';
+    
+}
+#main .event .ev li .ev_txt p{
+    position: absolute;
+    bottom: 40px;
+    
+    
+    
+}
+.footer{
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin-top: 90px;
+}
+.footer-wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 35px 0 35px 245px;
+    color: #898989;
+    background: url(../images/footer_logo.png) 0 40px no-repeat;
+    font-size: 13px;
+} 
+.footer .footer-wrap p span {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    margin-right: 10px;
+    font-family: 'Nanum Barun Gothic','돋움', '굴림', serif;
+    line-height: 1.5em;
+}
+address{
+    font-style: normal;
+}
+.footer .footer-wrap p{
+    color: #323232;
+}

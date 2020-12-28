@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    width: 100%;
+    height: 141px;
+    padding-top: 28px;
+    position: relative;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e8;
+    z-index: 999;
+    background: #ffffff;
+}
+
+p, li{font-family: 'IropkeBatangM' }
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #666;
+    clear: both;
+    table-layout: fixed;
+    background: #fff;
+    border-top: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    border-right: #ccc 1px solid;
+    line-height: 1.5em;
+}
+td{
+    color: #666;
+    vertical-align: middle;
+    text-align: center;
+    padding: 12px 10px 11px;
+    font-weight: normal;
+    border-bottom: #ccc 1px solid;
+}
+td:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+tr:nth-child(1){
+    background: #eee;
+}
+#header .nav {
+    float: left;
+}
+
+.nav {
+    width: 240px;
+    position: fixed;
+    height: 100%;
+    left: -200px;
+    z-index: 1000;
+}
+
+.nav > .btn {
+    position: fixed;
+    left:20px;top:20px;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+}
+
+.nav > .main_nav {
+    position: absolute;
+    left: 0;top:120px;
+    width: 300px;
+/*    background-color: #0581d8;*/
+}
+
+.nav > ul > li:hover {
+    background: #333;
+}
+
+.nav > ul > li:hover > a {
+    color: #ccc;
+}
+
+.nav > ul > li {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.nav > ul > li i{
+    font-size: 25px;
+    position: fixed;
+    left:25px;
+}
+.nav > ul > li:nth-child(2) i{
+    font-size: 30px;
+}
+.nav > ul > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    color: #777;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change{
+    left: 0;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 4px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -4px);
+}
+
+.nav .sub_nav {
+/*    display: none;*/
+    background-color: #fff;
+    position: absolute;
+    left: 300px;top:0;
+    width: 250px;
+}
+.nav .a{
+    display: none;
+}
+.nav .b{
+    display: none;
+}
+.nav .sub_nav li{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 30px;
+    
+}
+.nav .sub_nav li:hover{
+    background: #333;
+}
+.nav .sub_nav li:hover a{
+    color: #ccc;
+}
+.nav .sub_nav li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    color: #000;
+}
+.nav .a.on{
+    display: block;
+    transition: all 1s;
+}
+.nav .b.on{
+    display: block;
+    transition: all 1s;
+}
+#header .logo {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header .logo a {
+    width: 210px;
+}
+
+#header .bar {
+    width: 100%;
+    height: 25px;
+    background: #0581d8;
+    margin: 0 auto;
+
+}
+
+#section {
+    background: url(../sub_img/hat_section.gif) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 378px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#content .title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#content .title h1 {
+    font-size: 48px;
+    font-family: 'paybooc-Bold';
+}
+
+#content .title p {
+    margin-top: 33px;
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    background: #f6f7fb;
+    margin-top: 40px;
+    padding-top: 60px;
+}
+#main .text{
+    line-height: 1.5em;
+    font-family: 'paybooc-Bold';
+    line-height: 40px;
+}
+#main .button {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#main .button ul {
+    width: 100%;
+    height: 50px;
+
+}
+
+#main .button li {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #fff;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    background: #3496df;
+}
+#main .button li:hover{
+    background: #61abe2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#main .button li:hover a{
+    color: #333;
+}
+#main .button li:nth-child(1) {
+    margin-left: 25%;
+    margin-right: 2%;
+}
+
+#main .button li:nth-child(2) {
+    margin-right: 25%;
+    margin-left: 2%;
+}
+
+#main .button li a {
+    color: #fff;
+    font-family: 'Jeju Gothic'
+}
+#main .title {
+    text-align: center;
+}
+
+#main .title h1 {
+    font-family: NanumGothic;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#main .process {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+#main .process .text {
+    float: left;
+    width: 20%;
+}
+
+#main .process .text h2 {
+    font-family: 'paybooc-Bold';
+    font-size: 24px;
+    font-weight: 0;
+    line-height: 40px;
+}
+
+#main .process .circle {
+    width: 75%;
+    
+    float: left;
+    margin-left: 50px;
+    padding-left:1%;
+}
+#main .process .circle li{
+    list-style: circle;
+    margin-bottom: 10px;
+}
+#main .process .circle .service h3{
+    margin-top: 10px;
+     font-family: 'paybooc-Bold';
+    font-size: 18px;
+    font-weight: 0;
+    line-height: 40px;
+}
+#main .process .circle .service img{
+    margin-top: 0;
+    border: none;
+}
+#main .process .circle p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+#main .process .circle img{
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+#main .content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+#main .first_content .price{
+}
+
+#main .first_content .price .text{
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+}
+#main .first_content .price_table{
+    width: 75%;
+    float: left;
+    overflow: hidden;
+}
+
+
+#main .second_content {
+    margin-top: 50px;
+    padding: 0 50px;
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+#main .second_content .warning .text{
+    float: left;
+    width: 20%;
+   
+} 
+#main .second_content .warning_point{
+    width: 75%;
+    float: right;
+    overflow: hidden;
+    padding-left: 25px;
+}
+#main .second_content .warning_point li{
+    margin-bottom: 10px;
+    list-style: circle;
+}
+#main .second_content .price .text{
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+}
+#main .second_content .price_table{
+    width: 75%;
+    float: left;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin-top: 90px;
+}
+
+.footer-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 35px 0 35px 245px;
+    color: #898989;
+    background: url(../images/footer_logo.png) 0 40px no-repeat;
+    font-size: 13px;
+}
+
+.footer .footer-wrap p span {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    margin-right: 10px;
+    font-family: 'Nanum Barun Gothic', '돋움', '굴림', serif;
+    line-height: 1.5em;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer .footer-wrap p {
+    color: #323232;
+}

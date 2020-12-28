@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub_shoes.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+
+    <style>
+        /*옮기면 안됌*/
+
+
+        .jg {
+            font-family: 'Jeju Gothic';
+        }
+
+        .ns {
+            font-family: 'Noto Sans KR';
+        }
+    </style>
+    <title>Document</title>
+    <script>
+        $(function(ready) {
+            $(".button ul li").eq(0).click(function(e) {
+                e.preventDefault();
+                $(".first_content").stop().fadeIn(2000);
+                $(".second_content").stop().fadeOut(1000);
+            });
+            $(".button ul li").eq(1).click(function(e) {
+                e.preventDefault();
+                $(".first_content").stop().fadeOut(1000);
+                $(".second_content").stop().fadeIn(2000);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav jg">
+            <img src="images/menu.png" alt="메뉴아이콘">
+            <a href="https://www.cleantopia.com/kr/store/storeList.do">매장찾기</a>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="로고"></a>
+        </div>
+        <div class="bar"></div>
+    </div>
+    <div id="section">
+
+    </div>
+    <div id="content">
+        <div class="title jg">
+            <h1>운동화</h1>
+            <p class="ns">크린토피아 운동화 세탁서비스</p>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main_title title">
+            <h1>찌든 때와 발냄새를 싸악~<br><span style="color: #0581d8;">운동화 세탁서비스</span></h1>
+        </div>
+        <div class="button">
+            <ul>
+                <li><a href="#">운동화 세탁</a></li>
+                <li><a href="#">전문 세탁 서비스</a></li>
+            </ul>
+        </div>
+        <div class="first_content">
+            <div class="process content">
+                <div class="text">
+                    <h2>크린토피아<br>운동화 세탁</h2>
+                </div>
+                <div class="circle">
+                    <div class="table"><img src="sub_img/icon1.png" alt="">
+                        <p>탈취가공</p>
+                    </div>
+                    <div class="table"><img src="sub_img/icon2.png" alt="">
+                        <p>향진균 처리</p>
+                    </div>
+                    <div class="table"><img src="sub_img/icon3.png" alt="">
+                        <p>맞춤건조</p>
+                    </div>
+                    <div class="table"><img src="sub_img/icon4.png" alt="">
+                        <p>손세탁 찌든때 처리</p>
+                    </div>
+                </div>
+            </div>
+            <div class="package content">
+                <div class="text">
+                    <h2>운동화 세탁<br>서비스 안내</h2>
+                </div>
+                <div class="service">
+                    <img src="sub_img/waterclean.png" alt="">
+                    <div class="watertext">
+                        <p>운동화는 드라이 클리닝을 할 경우 용제에 의해 접착제가 용해되어 운동화 창과 피가 분리되므로 물세탁만 가능합니다.<br><br>
+                            구두(가죽 단화)는 본래 세탁하지 않는 것이 원칙이나 세탁을 원하시는 경우 물세탁을 합니다. 이 경우 특수 약품을 사용하여 물빠짐과 경화현상을 최소화 시키고 고정시킨 형태로 자연건조하여 광택을 냅니다.
+                            이때 소재의 특성에 따라 탈색, 수축, 변형, 거칠어지는 현상 등이 일어날 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="warning content">
+                <div class="text">
+                    <h2>주의사항</h2>
+                </div>
+                <div class="warning_point">
+                    <ul>
+                        <li>운동화는 소재의 특성에 따라 어느 정도의 탈색, 수축, 거칠어지는 현상이 발생할 수 있습니다.</li>
+                        <li>세무나 가죽의 경우 제조사에서 세탁을 하지 않도록 표기되어 있는 경우가 있으며, 이런 경우 오염제거를 위해 물세탁을 하면 운동화 소재의 특성상 탈색, 수축, 거칠어짐, 이염 등이 발생하는 경우가 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="second_content">
+            <div class="second_title title">
+                <h1>명품단화와 어그부츠는<br><span style="color: #0581d8;">전문 세탁 서비스</span>를 이용하세요.</h1>
+                <p>명품단화 및 어그부츠는 전문적인 세탁 공정이 필요하기 때문에<br>
+                    반드시 믿을 수 있는 전문 세탁업체에 맡기셔야 합니다.</p>
+            </div>
+            <div class="service1 service">
+                <img src="sub_img/service1.png" alt="">
+                <h3>명품단화 세탁서비스</h3>
+                <p>
+                    세탁하기 까다로운 명품 단화!<br>
+                    크린토피아의 숙련된 전문가들에게 맡겨보세요.
+                </p>
+            </div>
+            <div class="service2 service">
+                <img src="sub_img/service2.png" alt="">
+                <h3>전문가니까! 믿으니까! 천연어그부츠 세탁서비스</h3>
+                <p>
+                    천연 어그부츠를 가죽전용 특수세제와 세탁법으로<br>
+                    깨끗하게 살균 세탁해 드립니다.
+                </p>
+            </div>
+            <div class="ugg">
+                <div class="text">
+                    <h2>어그부츠 세탁<br>서비스 안내</h2>
+                </div>
+                <div class="clean_ugg">
+                    <h3>천연어그부츠 세탁</h3>
+                    <p>크린토피아의 천연어그부츠 세탁서비스 전 과정을 본사직영 특수세탁부에서 가죽세탁 전문가들에 의해 이루어집니다.</p>
+                    <ul>
+                        <li> 가죽전용 세제로 속 때까지 쏙쏙</li>
+                        <li> 가죽의 천연색을 살려주는 특수약품!</li>
+                        <li> 어그부츠 전용건조실로 가죽손상 방지!</li>
+                    </ul>
+                    <div class="ugg_img">
+                        <img src="sub_img/ugg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="warning content">
+                <div class="text">
+                    <h2>주의사항</h2>
+                </div>
+                <div class="warning_point">
+                    <ul>
+                        <li>겨울철 제설작업에 사용된 염화칼슘은 천연가죽을 딱딱하게 만드는 경화현상을 일으키게 됩니다.</li>
+                        <li>세염화칼슘으로 손상된 어그부츠는 세탁을 해도 색상이나 외형이 완벽하게 복원되지 않기 때문에 오염이 발생하면 경화현상이 진행되기 전에 신속하게 세탁을 맡기셔야 최대한 손상을 막을 수 있습니다.</li>
+                        <li>천연어그부츠 복원서비스는 염화칼슘으로 인해 발생한 어그의 수축 및 경화현상(가죽이 딱딱해지는 현상)을 복원하는 서비스입니다.<br>
+                            색상은 복원이 어려우며, 외형복원은 70~80% 이상 복원이 가능합니다. 하지만, 어그부츠의 오염이나 손상 정도가 심할 경우에는 복원서비스로도 복원이 되지 않을 수 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="warning content">
+                    <div class="text">
+                        <h2>세탁기간</h2>
+                    </div>
+                    <div class="warning_point">
+                        <ul>
+                            <li>보통 10 ~ 15일이 소요되며 오염이 심한 경우나 세탁물이 많은 4,5월에는 더 오래 걸릴 수 있습니다.(급한 경우, 매장의 점주님을 통해 일정을 상의해주시기 바랍니다.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="text">
+                    <h2>요금안내</h2>
+                </div>
+                <div class="price_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 50%">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <td>품목</td>
+                            <td>요금</td>
+                        </tr>
+                        <tr>
+                            <td>천연어그부츠(소)</td>
+                            <td>20,000원(인조어그: 8,600원)</td>
+                        </tr>
+                        <tr>
+                            <td>천연어그부츠(중)</td>
+                            <td>25,000원(인조어그: 10,800원)</td>
+                        </tr>
+                        <tr>
+                            <td>천연어그부츠(대) </td>
+                            <td>30,000원(인조어그: 12,900원)</td>
+                        </tr>
+                        <tr>
+                            <td>복원서비스</td>
+                            <td>15,000원</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrap">
+                <address>본사 경기도 성남시 중원구 순환로 222 (상대원동 64번지) 크린토피아 </address>
+                <p><span>대표전화(창업문의) <strong>1577-4560</strong></span><span>고객상담 <strong>1899-4568</strong></span></p>
+                <p><span>대표이사 이범택</span><span>사업자등록번호 130-81-55163</span><span>FAX 031-733-1995</span></p>
+                <p class="copy">COPYRIGHT©CLEANTOPIA ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</body></html>
