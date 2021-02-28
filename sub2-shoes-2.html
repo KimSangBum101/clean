@@ -23,7 +23,6 @@
         .ns {
             font-family: 'Noto Sans KR';
         }
-
     </style>
     <title>Document</title>
     <script>
@@ -35,7 +34,7 @@
                         left: 0
                     }, 1000);
                     $(".btn").addClass("change");
-                    $(".main_nav").css("background","#fff");
+                    $(".main_nav").css("background", "#fff");
 
                     num = 1;
                 } else {
@@ -44,7 +43,7 @@
                     }, 1000);
                     $(".btn").removeClass("change");
                     $(".sub_nav").removeClass("on");
-                    $(".main_nav").css("background","none");
+                    $(".main_nav").css("background", "none");
                     num = 0;
                 }
             });
@@ -69,49 +68,51 @@
                 $(".first_content").stop().fadeOut(1000);
                 $(".second_content").stop().fadeIn(2000);
             });
-        })
-
+        });
     </script>
 </head>
+
 <body>
-    <div id="header">
-       <div class="nav jg">
-            <div class="btn">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <ul class="main_nav">
-                <li><a href="#">의류 서비스<i class="fas fa-tshirt"></i></a>
-                    
-                    <ul class="sub_nav a">
-                        <li><a href="sub1.html">일반의류</a></li>
-                        <li><a href="sub9-Yshirt.html">와이셔츠</a></li>
-                        <li><a href="sub4-skin.html">가죽모피</a></li>
-                        <li><a href="sub6-outdoor.html">아웃도어</a></li>
-                        <li><a href="sub7-school.html">교복</a> </li>
-                    </ul>
-                </li>
-                <li><a href="#">
-                  기타 서비스
-                  <i class="fas fa-shopping-bag"></i>
-                   </a>
-                    <ul class="sub_nav b">
-                        <li><a href="sub3-blanket.html">이불</a></li>
-                        <li><a href="sub2-shoes-2.html">운동화</a></li>
-                        <li><a href="sub5-named.html">명품가방</a></li>
-                        <li><a href="sub8-hat.html">모자/인형/가방</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://www.cleantopia.com/kr/store/storeList.do">매장찾기<i class="fas fa-map-marked-alt"></i></a></li>
-                <li><a href="sub10_membership2.html">멤버십<i class="fas fa-address-card"></i></a></li>
-            </ul>
+    <div class="nav jg">
+        <div class="btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
+        <ul class="main_nav">
+            <li><a href="#"><i class="fas fa-tshirt"></i>의류 서비스</a>
+
+                <ul class="sub_nav a">
+                    <li><a href="sub1.html">일반의류</a></li>
+                    <li><a href="sub9-Yshirt.html">와이셔츠</a></li>
+                    <li><a href="sub4-skin.html">가죽모피</a></li>
+                    <li><a href="sub6-outdoor.html">아웃도어</a></li>
+                    <li><a href="sub7-school.html">교복</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">
+                    <i class="fas fa-shopping-bag"></i>
+                    기타 서비스
+                </a>
+                <ul class="sub_nav b">
+                    <li><a href="sub3-blanket.html">이불</a></li>
+                    <li><a href="sub2-shoes-2.html">운동화</a></li>
+                    <li><a href="sub5-named.html">명품가방</a></li>
+                    <li><a href="sub8-hat.html">모자/인형/가방</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.cleantopia.com/kr/store/storeList.do"><i class="fas fa-map-marked-alt"></i>매장찾기</a></li>
+            <li><a href="sub10_membership2.html"><i class="fas fa-address-card"></i>멤버십</a></li>
+        </ul>
+    </div>
+    <div id="header">
+
         <div class="logo">
             <a href="index.html"><img src="images/logo.png" alt="로고"></a>
         </div>
         <div class="bar"></div>
     </div>
+
     <div id="section">
 
     </div>
@@ -282,5 +283,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+</body></html>

@@ -641,17 +641,16 @@ address {
         margin-bottom: 100px;
     }
     .page3 .tr_section .tr-box:hover {
-
-    transition: all 0.2s;
-    transform: scale(1);
-}        
-
+        background-color: antiquewhite;
+        transition: all 0.2s;
+        transform: scale(1);
+    }        
     .page3 .tr_section .tr-box {
-        width: 50%;
-        height: 130px;
+        width: 45%;
+        height: 20vh;
         float: left;
-        padding-top: 0px;
-        margin: 0;
+        padding-top: 40px;
+        margin: 0 2.5%;;
         margin-bottom: 20px;
         border-left: 1px solid #eee;
         overflow: hidden;
@@ -661,119 +660,42 @@ address {
         text-align: center;
         font-size: 16px;
         margin-top: 0px;
-        margin-right: 50px;
     }
 
     .page3 .tr_section .tr-box p {
         font-size: 14px;
         text-align: center;
         margin: 0;
-        margin-right: 50px;
         margin-top: 10px;
         line-height: 25px;
-        
     }
     .page3 .tr_section .tr-box .view2 p{
         line-height: 0;
     }
     .page3 .tr_section .tr-box p:nth-child(4) {
         font-size: 20px;
-        position: absolute;
-        bottom: 30px;
-        right: 20px;
     }
-
-
-
+    .page3 .tr_section .tr-box:hover.tr-box p:nth-child(4) {
+    display: none;
+    transform: all 1s;
+}
     .page3 .tr_section .tr-box p span {
         font-size: 12px;
-        right: 0;
-        left: 90px;
     }
-
-
-
     .page3 .tr_section img {
-        height: 50px;
-        float: left;
-        margin-top: 30px;
-        margin-left: 50px;
-        
+        display: none;
     }
 
-
-
-    .page3 .tr_section .view1 img {
-        text-align: left;
-        margin: 0;
-        width: 100px;
-        margin-top: 30px;
-        margin-left: 50px;
-    }
-
-    .page3 .tr_section .view2 {
-        margin-left: 0px;
-
-    }
-
-    .page3 .tr_section .view2 img {
-        margin-left: 45px;
-        width: 80px;height: 60px;
-
-    }
     .page3 .tr_section .view2 br{
         display: none;
     }
-    .page3 .tr_section .view3 {
-        margin-left: 0px;
-
-    }
-
-    .page3 .tr_section .view3 img {
-        margin-left: 75px;
-        
-
-
-    }
-
-    .page3 .tr_section .view4 {
-      margin-left: 0px;
-
-    }
-
-    .page3 .tr_section .view4 img {
-       margin-left: 53px;
-
-
-    }
-
-    .page3 .tr_section .view5 {
-        margin-left: 0px;
-
-    }
-
-    .page3 .tr_section .view5 img {
-        margin-left: 65px;
-
-    }
-
-    .page3 .tr_section .view6 {
-        margin: 0;
-
-    }
-
-    .page3 .tr_section .view6 img {
-        margin-left: 50px;
-
-    }
-
     .stamp {
         width: 100%;
     }
 
     .stamp h2 {
         position: absolute;
-        left: 173px;
+        left: 10%;
         top: 25px;
         color: #045a7d;
         font-size: 20px;
@@ -798,9 +720,18 @@ address {
     .stamp p:nth-child(3) {
         margin-left: 0;
     }
-
-
-
-
-
+}
+@media screen and (max-width:770px) {
+    .fth_section {
+        width: 500px;
+    }
+    .ev{
+        width: 500px;
+    }
+    .event4 {
+        height: 28vh;
+    }
+    .stamp{
+        display: none;
+    }
 }
